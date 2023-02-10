@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  ::selection {
+    @apply bg-slate-900 text-slate-50;
+  }
+}
+
+button:hover {
+  @apply bg-slate-900 text-slate-50;
+  transition: all 0.3s linear;
+}
+
+input[type='checkbox'] {
+  cursor: pointer;
+  margin-left: 0.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @apply font-semibold;
+}
+
+input[type='checkbox']:hover {
+  cursor: pointer;
+  @apply bg-sky-500 text-slate-100 border-red-500;
+}
+
+input[type='number'] {
+  border: none;
+  outline: none;
+  @apply caret-slate-900;
+  /* appearance: textfield; */
+  width: 50px;
+  text-align: center;
+}
+
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  border: none;
+  outline: none;
+  @apply caret-slate-900;
+}
+
+label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+  font-weight: 500;
+
+  /* @apply border-slate-900 border-2; */
+}
