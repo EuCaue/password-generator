@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <script defer type="module" src="src/main.js"></script>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+
+  <body class="bg-cyan-300 text-slate-900">
+    <div
+      class="flex items-center justify-center text-center w-[100vw] h-[100vh]"
+    >
+      <span class="flex items-center justify-center text-center flex-col">
+        <h1 class="text-center text-4xl font-bold pb-3">Password Generator</h1>
+        <span
+          class="flex items-center justify-between gap-4 text-center flex-row mb-5"
+        >
+          <p
+            class="flex justify-center items-center text-2xl font-semibold shadow-lg shadow-sky-400 bg-cyan-100 px-4 w-[100%] h-[10vh] text-center"
+            id="password"
+          >
+            123456789123456789
+          </p>
+          <button
+            type="submit"
+            class="flex self-center items-center justify-center text-2xl font-semibold shadow-lg shadow-sky-400 bg-cyan-400 px-4 rounded-md w-40 h-14"
+            form="form"
+          >
+            Generate
+          </button>
+        </span>
+        <form
+          class="flex items-center justify-center gap-5 flex-row mr-16"
+          id="form"
+        >
+          <label for="num">
+            Numbers
+            <input type="checkbox" id="num" />
+          </label>
+
+          <label for="char">
+            #@%!%
+            <input type="checkbox" id="char" />
+          </label>
+
+          <label for="upper-case">
+            UPPERCASE
+            <input type="checkbox" id="upper-case" />
+          </label>
+
+          <label for="lower-case">
+            lowercase
+            <input type="checkbox" id="lower-case" />
+          </label>
+
+          <label for="len"
+            >Length
+            <input type="number" id="len" min="1" max="50" value="5" />
+          </label>
+        </form>
+      </span>
+    </div>
+  </body>
+</html>
